@@ -6,7 +6,18 @@
     <act_window id='action_matrix_manager'
 		name='manager'
 		res_model='test.matrix.manager'
-		view_mode='tree,form'/>    
+		view_mode='tree,form'/>
+    
+    <act_window id='action_matrix_employee'
+		name='employee'
+		res_model='test.matrix.employee'
+		view_mode='tree,form'/>
+    
+    <act_window id='action_matrix_project'
+		name='project'
+		res_model='test.matrix.project'
+		view_mode='tree,form'/>
+    
     
     <menuitem id='main_module_test_widget_matrix' name='2D matrix'/>
     <menuitem id='module_test_widget_matrix_models' name='Tests Models' parent='main_module_test_widget_matrix'/>    
@@ -17,6 +28,19 @@
 	      parent='module_test_widget_matrix_models'
 	      sequence='20'
 	      action='action_matrix_manager'/>
+    
+    <menuitem id='menu_test_widget_matrix_employee'
+	      name='Employee'
+	      parent='module_test_widget_matrix_models'
+	      sequence='20'
+	      action='action_matrix_employee'/>
+    
+    <menuitem id='menu_test_widget_matrix_project'
+	      name='Project'
+	      parent='module_test_widget_matrix_models'
+	      sequence='20'
+	      action='action_matrix_project'/>
+    
     
     <!-- Desarrollo-Genero Form view -->
     <record id='view_form_matrix_task' model='ir.ui.view'>
